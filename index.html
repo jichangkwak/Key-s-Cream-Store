@@ -47,21 +47,29 @@
           <button class="btn">Buy Now</button>
         </div>
         <ul class="socials">
-          <li>
-            <a href="https://www.facebook.com/share/1DdSnUaZW9/">target="_blank">
-  <i class="ri-facebook-fill"></i>
-</a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=6jycrix">arget="_blank">
-  <i class="ri-facebook-fill"></i>
-</a>
-          </li>
-          <li>
-            <a href="https://pin.it/5WiGj3Srw"><i class="ri-pinterest-line">target="_blank">
-  <i class="ri-facebook-fill"></i>
-</a>
-          </li>
+  <li>
+    <a href="https://www.facebook.com/share/1DdSnUaZW9/" target="_blank">
+      <i class="ri-facebook-fill"></i>
+    </a>
+  </li>
+
+  <li>
+    <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=6jycrix" target="_blank">
+      <i class="ri-instagram-line"></i>
+    </a>
+  </li>
+
+  <li>
+    <a href="https://pin.it/5WiGj3Srw" target="_blank">
+      <i class="ri-pinterest-line"></i>
+    </a>
+  </li>
+
+  <li>
+    <a href="tel:+6281234567890">
+      <i class="ri-phone-fill"></i>
+    </a>
+  </li>
         </ul>
       </div>
     </header>
@@ -186,6 +194,49 @@
       </div>
     </section>
 
+  <section class="section__container order__container" id="order">
+  <h2 class="section__header">Order Now</h2>
+  <p class="section__description">
+    Pesan ice cream Key's Cream favorit kamu sekarang! Isi form di bawah
+    untuk melakukan pemesanan.
+  </p>
+
+  <form class="order-form">
+    <div class="form-group">
+      <label>Nama Lengkap</label>
+      <input type="text" placeholder="Masukkan nama kamu" required />
+    </div>
+
+    <div class="form-group">
+      <label>Nomor WhatsApp / Telepon</label>
+      <input type="tel" placeholder="08xxxxxxxxxx" required />
+    </div>
+
+    <div class="form-group">
+      <label>Pilih Produk</label>
+      <select required>
+        <option value="">-- Pilih Produk --</option>
+        <option>Ice Cream Stick</option>
+        <option>Ice Cream Cup</option>
+        <option>Ice Cream Cone</option>
+        <option>Ice Cream 5 Liter</option>
+        <option>Ice Cream Package</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Jumlah</label>
+      <input type="number" min="1" placeholder="Masukkan jumlah" required />
+    </div>
+
+    <div class="form-group">
+      <label>Catatan Tambahan</label>
+      <textarea placeholder="Contoh: request rasa, packing, dll"></textarea>
+    </div>
+
+    <button class="btn order-btn" type="submit">Kirim Order</button>
+  </form>
+</section>
     <section class="section__container subscribe__container" id="contact">
       <div class="subscribe__content">
         <h2 class="section__header">Subscribe For Discounts</h2>
@@ -240,6 +291,7 @@
     <script src="main.js"></script>
   </body>
 </html>
+
 
 
 
