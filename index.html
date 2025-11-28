@@ -11,40 +11,53 @@
     <title>Web Design Mastery | Key's Cream</title>
   </head>
   <body>
-    <nav>
-      <div class="nav__header">
-        <div class="nav__logo">
-          <a href="#" class="logo">Key's<span>Cream</span></a>
-        </div>
-        <div class="nav__menu__btn" id="menu-btn">
-          <i class="ri-menu-3-line"></i>
-        </div>
-      </div>
-      <ul class="nav__links" id="nav-links">
-  <li><a href="#home">Home</a></li>
+  <nav>
+  <div class="nav__header">
+    <div class="nav__logo">
+      <a href="#" class="logo">Key's<span>Cream</span></a>
+    </div>
 
-  <!-- DROPDOWN MENU -->
-  <li class="dropdown">
-    <a href="#" class="dropdown__toggle">Menu <i class="ri-arrow-down-s-line"></i></a>
+    <div class="nav__menu__btn" id="menu-btn">
+      <i class="ri-menu-3-line"></i>
+    </div>
+  </div>
 
-    <ul class="dropdown__menu">
-      <li><a href="#menu">Popular Ice Cream</a></li>
-      <li><a href="#discover">Most Selling</a></li>
-      <li><a href="#order">Discount Key's Cream</a></li>
-    </ul>
-  </li>
+  <ul class="nav__links" id="nav-links">
+    <li><a href="#home">Home</a></li>
 
-  <li><a href="#categories">Categories</a></li>
-        <a href="#" class="dropdown__toggle">Categories <i class="ri-arrow-down-s-line"></i></a>
+    <!-- DROPDOWN MENU -->
+    <li class="dropdown">
+      <a href="#" class="dropdown__toggle">Menu <i class="ri-arrow-down-s-line"></i></a>
 
-    <ul class="dropdown__categories">
-      <li><a href="#">Ice cream stick</a></li>
-      <li><a href="#">Ice cream cup</a></li>
-      <li><a href="#">Ice cream cone</a></li>
-      <li><a href="#">Ice cream 5 liter</a></li>
-      <li><a href="#">Ice cream package</a></li>
-    </ul>
-  </li>
+      <ul class="dropdown__menu">
+        <li><a href="#menu">Popular Ice Cream</a></li>
+        <li><a href="#discover">Most Selling</a></li>
+        <li><a href="#order">Discount Key's Cream</a></li>
+      </ul>
+    </li>
+
+    <!-- CATEGORIES DROPDOWN -->
+    <li class="dropdown">
+      <a href="#" class="dropdown__toggle">Categories <i class="ri-arrow-down-s-line"></i></a>
+
+      <ul class="dropdown__menu categoryMenu">
+        <li><a href="#" data-cat="stick">Ice Cream Stick</a></li>
+        <li><a href="#" data-cat="cup">Ice Cream Cup</a></li>
+        <li><a href="#" data-cat="cone">Ice Cream Cone</a></li>
+        <li><a href="#" data-cat="five">Ice Cream 5 Liter</a></li>
+        <li><a href="#" data-cat="package">Ice Cream Package</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#contact">Contact Us</a></li>
+  </ul>
+
+  <div class="nav__btns">
+    <button class="btn"><i class="ri-shopping-cart-line"></i></button>
+    <button class="btn"><i class="ri-notification-3-fill"></i></button>
+  </div>
+</nav>
+
 
   <li><a href="#contact">Contact Us</a></li>
 </ul>
@@ -329,6 +342,7 @@
     <script src="main.js"></script>
   </body>
 </html>
+
 
 
 
