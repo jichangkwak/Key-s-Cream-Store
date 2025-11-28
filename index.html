@@ -193,43 +193,52 @@
         </div>
       </div>
     </section>
-<section class="order-section">
-  <button class="open-order-btn">ORDER NOW</button>
-
-  <div class="order-form-container" id="orderForm">
-    <h2>Order Ice Cream</h2>
-
-    <form class="order-form">
-      <div class="form-group">
-        <label>Nama Pemesan</label>
-        <input type="text" placeholder="Masukkan nama kamu" required />
-      </div>
-
-      <div class="form-group">
-        <label>Pilih Produk</label>
-        <select required>
-          <option value="">-- Pilih Produk --</option>
-          <option value="Stick">Ice Cream Stick</option>
-          <option value="Cup">Ice Cream Cup</option>
-          <option value="Cone">Ice Cream Cone</option>
-          <option value="5 Liter">Ice Cream 5 Liter</option>
-          <option value="Package">Ice Cream Package</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label>Jumlah</label>
-        <input type="number" min="1" placeholder="Masukkan jumlah" required />
-      </div>
-
-      <div class="form-group">
-        <label>Catatan</label>
-        <textarea placeholder="Tambahan (optional)"></textarea>
-      </div>
-
-      <button type="submit" class="order-btn">Kirim Pesanan</button>
-    </form>
+<section class="order__section" id="order">
+  <div class="order__container">
+    <h2 class="section__header">Order Ice Cream</h2>
+    <p class="section__description">
+      Fill in the order details below. We will prepare your sweet treats!
+    </p>
+    
+    <!-- Tombol -->
+    <button class="order__btn" id="openOrder">Order Now</button>
   </div>
+
+  <!-- POPUP / MODAL FORM -->
+  <div class="order__modal" id="orderModal">
+    <div class="order__modal__content">
+      <span class="order__close" id="closeOrder">&times;</span>
+
+      <h3>Order Form</h3>
+
+      <form class="order__form">
+        <label>Full Name</label>
+        <input type="text" placeholder="Your name..." required />
+
+        <label>Order Type</label>
+        <select required>
+          <option value="">Choose product</option>
+          <option>Ice Cream Stick</option>
+          <option>Ice Cream Cup</option>
+          <option>Ice Cream Cone</option>
+          <option>Ice Cream 5 Liter</option>
+          <option>Package</option>
+        </select>
+
+        <label>Quantity</label>
+        <input type="number" min="1" placeholder="How many?" required />
+
+        <label>Phone Number</label>
+        <input type="text" placeholder="Your phone..." required />
+
+        <label>Address</label>
+        <textarea placeholder="Delivery address..." required></textarea>
+
+        <button type="submit" class="submit__btn">Submit Order</button>
+      </form>
+    </div>
+  </div>
+
 </section>
     <footer>
       <div class="section__container footer__container">
@@ -270,6 +279,7 @@
     <script src="main.js"></script>
   </body>
 </html>
+
 
 
 
