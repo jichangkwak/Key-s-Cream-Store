@@ -852,6 +852,25 @@ footer {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+.buy__btn {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.buy__btn:hover {
+  background: var(--primary-color-dark);
+  transform: scale(1.05);
+}
+
 
 
 
