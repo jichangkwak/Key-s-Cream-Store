@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Web Design Mastery | Key's Cream</title>
-  </head>
-  <body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Key's Cream</title>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
 <nav>
   <div class="nav__header">
     <div class="nav__logo">
-      <a href="#" class="logo">Key's<span>Cream</span></a>
+      <a href="#home" class="logo">Key's<span>Cream</span></a>
     </div>
 
     <div class="nav__menu__btn" id="menu-btn">
@@ -26,437 +27,292 @@
 
     <!-- MENU DROPDOWN -->
     <li class="dropdown">
-      <a class="dropdown__toggle">
-        Menu <i class="ri-arrow-down-s-line"></i>
-      </a>
-
+      <a class="dropdown__toggle">Menu <i class="ri-arrow-down-s-line"></i></a>
       <ul class="dropdown__menu">
-        <li><a href="#menu">Popular Ice Cream</a></li>
-        <li><a href="#categories">Most Selling</a></li>
+        <li><a href="#popular">Popular Ice Cream</a></li>
+        <li><a href="#most-selling">Most Selling</a></li>
         <li><a href="#discount">Discount Key’s Cream</a></li>
       </ul>
     </li>
 
-    <!-- CATEGORIES -->
+    <!-- CATEGORIES DROPDOWN -->
     <li class="dropdown">
-      <a class="dropdown__toggle">
-        Categories <i class="ri-arrow-down-s-line"></i>
-      </a>
-
+      <a class="dropdown__toggle">Categories <i class="ri-arrow-down-s-line"></i></a>
       <ul class="dropdown__menu">
-        <li><a href="#">Ice Cream Stick</a></li>
-        <li><a href="#">Ice Cream Cup</a></li>
-        <li><a href="#">Ice Cream Cone</a></li>
-        <li><a href="#">Ice Cream 5 Liter</a></li>
-        <li><a href="#">Package</a></li>
+        <li><a href="#stick">Ice Cream Stick</a></li>
+        <li><a href="#cup">Ice Cream Cup</a></li>
+        <li><a href="#cone">Ice Cream Cone</a></li>
+        <li><a href="#tub5L">Ice Cream 5 Liter</a></li>
+        <li><a href="#package">Package</a></li>
       </ul>
     </li>
 
     <li><a href="#contact">Contact Us</a></li>
-
-    <!-- Buttons Harus di Dalam UL -->
-    <li class="nav__btns">
-      <button class="btn"><i class="ri-shopping-cart-line"></i></button>
-      <button class="btn"><i class="ri-notification-3-fill"></i></button>
-    </li>
   </ul>
+
+  <div class="nav__btns">
+    <button class="btn"><i class="ri-shopping-cart-line"></i></button>
+    <button class="btn"><i class="ri-notification-3-fill"></i></button>
+  </div>
 </nav>
 
+<!-- ================= HEADER ================= -->
+<header id="home">
+  <div class="header__image">
+    <img src="IMG-20251128-WA0023(1).jpg" alt="header" />
+  </div>
 
-    <header id="home">
-      <div class="header__image">
-        <img src="IMG-20251128-WA0023(1).jpg" alt="header" />
+  <div class="header__content">
+    <h1>WELCOME TO <span>KEY'S</span> CREAM</h1>
+    <p class="section__description">
+      Indulge in a delightful journey of flavors! Discover creamy, delicious ice creams crafted to bring joy to every scoop.
+    </p>
+
+    <button class="btn openOrder">Buy Now</button>
+
+    <ul class="socials">
+      <li><a href="https://www.facebook.com/share/1DdSnUaZW9/" target="_blank"><i class="ri-facebook-fill"></i></a></li>
+      <li><a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=6jycrix" target="_blank"><i class="ri-instagram-line"></i></a></li>
+      <li><a href="https://pin.it/5WiGj3Srw" target="_blank"><i class="ri-pinterest-line"></i></a></li>
+      <li><a href="tel:+6281234567890"><i class="ri-phone-fill"></i></a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- ================= POPULAR ================= -->
+<section class="section__container popular__container" id="popular">
+  <h2 class="section__header">Popular Ice-Cream</h2>
+
+  <div class="popular__grid">
+    <div class="popular__card">
+      <img src="IMG-20251128-WA0025.jpg" alt="popular" />
+      <div class="popular__card__content">
+        <h4>Key's Cream ChocoMint</h4>
+        <h3>Rp35.000</h3>
+        <button class="btn openOrder">Buy Now</button>
       </div>
-      <div class="header__content">
-        <h1>WELCOME TO <span>KEY'S</span> CREAM</h1>
-        <p class="section__description">
-          Indulge in a delightful journey of flavors! Discover creamy, delicious
-          ice creams crafted to bring joy to every scoop. Welcome to your sweet
-          escape!
-        </p>
-        <div class="header__btn">
-          <button class="btn">Buy Now</button>
-        </div>
-        <ul class="socials">
-  <li>
-    <a href="https://www.facebook.com/share/1DdSnUaZW9/" target="_blank">
-      <i class="ri-facebook-fill"></i>
-    </a>
-  </li>
+    </div>
 
-  <li>
-    <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=6jycrix" target="_blank">
-      <i class="ri-instagram-line"></i>
-    </a>
-  </li>
-
-  <li>
-    <a href="https://pin.it/5WiGj3Srw" target="_blank">
-      <i class="ri-pinterest-line"></i>
-    </a>
-  </li>
-
-  <li>
-    <a href="tel:+6281234567890">
-      <i class="ri-phone-fill"></i>
-    </a>
-  </li>
-        </ul>
+    <div class="popular__card">
+      <img src="IMG-20251128-WA0026.jpg" alt="popular" />
+      <div class="popular__card__content">
+        <h4>Key's Cream Chocolate</h4>
+        <h3>Rp25.000</h3>
+        <button class="btn openOrder">Buy Now</button>
       </div>
-    </header>
+    </div>
 
-    <section class="section__container popular__container" id="menu">
-      <h2 class="section__header">Popular Ice-Cream</h2>
-      <div class="popular__grid">
-        <div class="popular__card">
-          <img src="IMG-20251128-WA0025.jpg" alt="popular" />
-          <div class="popular__card__content">
-            <h4>Key's cream ChocoMint </h4>
-            <h3>Rp35.000</h3>
-              <button class="buy__btn" onclick="openOrderForm()">Buy Now</button>
-          </div>
-        </div>
-        <div class="popular__card">
-          <img src="IMG-20251128-WA0026.jpg" alt="popular" />
-          <div class="popular__card__content">
-            <h4>Key's Cream Chocolate </h4>
-            <h3>Rp 25.000</h3>
-              <button class="buy__btn" onclick="openOrderForm()">Buy Now</button>
-          </div>
-        </div>
-        <div class="popular__card">
-          <img src="IMG-20251129-WA0000.jpg" alt="popular" />
-          <div class="popular__card__content">
-            <h4>Key's Cream Strawberry</h4>
-            <h3>Rp 30.000</h3>
-              <button class="buy__btn" onclick="openOrderForm()">Buy Now</button>
-          </div>
-        </div>
+    <div class="popular__card">
+      <img src="IMG-20251129-WA0000.jpg" alt="popular" />
+      <div class="popular__card__content">
+        <h4>Key's Cream Strawberry</h4>
+        <h3>Rp30.000</h3>
+        <button class="btn openOrder">Buy Now</button>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section class="section__container discover__container" id="categories">
-      <h2 class="section__header">Most Selling Ice-Cream</h2>
-      <p class="section__description">
-        Discover our crowd favorites! These ice creams are loved by everyone and
-        have become the top picks for their irresistible flavors and creamy
-        textures.
-      </p>
-      <div class="discover__grid">
-        <div class="discover__card">
-          <img src="IMG-20251129-WA0002.jpg" alt="discover" />
-          <div class="discover__card__content">
-            <h4>Double Chocolate Crunch</h4>
-            <p class="section__description">
-              Pistachio ice cream is a delightfully rich and creamy frozen dessert, distinctive for its pale green color and its signature nutty flavor. The taste is a unique blend of sweet, subtly earthy, and intensely nutty. It is often described as having a sophisticated and mellow sweetness that comes from the ground pistachios.
-            </p>
-            <h3>
-              Rp 30.000 <span><s>Rp 45.000</s></span>
-            </h3>
-            <div class="discover__card__btn">
-              <button class="btn">Buy Now</button>
-            </div>
-          </div>
-        </div>
-        <div class="discover__card">
-          <img src="IMG-20251129-WA0003.jpg" alt="discover" />
-          <div class="discover__card__content">
-            <h4>Fruit stick key's cream</h4>
-            <p class="section__description">
-              Experience the perfect harmony of fruity and creamy with our
-              milk. Every bites feels like enjoying a
-              slice of fresh fruit ,​A fruit popsicle (or ice pop) is a simple yet refreshing frozen treat made primarily from fruit juice, fruit purée, and/or fruit chunks, frozen around a stick.
-            </p>
-            <h3>
-              Rp 10.000 <span><s> Rp 20.000</s></span>
-            </h3>
-            <div class="discover__card__btn">
-              <button class="btn">Buy Now</button>
-            </div>
-          </div>
-        </div>
-        <div class="discover__card">
-          <img src="IMG-20251129-WA0001.jpg" alt="discover" />
-          <div class="discover__card__content">
-            <h4>Key's cream package 6 mix</h4>
-            <p class="section__description">
-              Unlock the magic of homemade frozen treats with our convenient 6-Flavor Ice Cream Mix Variety Pack. Perfect for parties, family fun, or simply satisfying your sweet tooth, this package provides everything you need to create six unique and delicious flavors of smooth, creamy ice cream. Just add milk/cream and churn!
-            </p>
-            <h3>
-              Rp 80.000 <span><s> Rp 105.000.</s></span>
-            </h3>
-            <div class="discover__card__btn">
-              <button class="btn">Buy Now</button>
-            </div>
-          </div>
-        </div>
+<!-- ================= MOST SELLING ================= -->
+<section class="section__container discover__container" id="most-selling">
+  <h2 class="section__header">Most Selling Ice-Cream</h2>
+
+  <div class="discover__grid">
+    <div class="discover__card">
+      <img src="IMG-20251129-WA0002.jpg" alt="discover" />
+      <div class="discover__card__content">
+        <h4>Double Chocolate Crunch</h4>
+        <h3>Rp 30.000 <span><s>Rp45.000</s></span></h3>
+        <button class="btn openOrder">Buy Now</button>
       </div>
-    </section>
+    </div>
 
-    <section class="section__container popular__container" id="discount">
-      <h2 class="section__header">Key's cream discount</h2>
-      <div class="popular__grid">
-        <div class="popular__card">
-          <img src="IMG-20251128-WA0024.jpg" alt="popular" />
-          <div class="popular__card__content">
-            <h4>Key's cream strawberry </h4>
-            <h3>Rp35.000</h3>
-            <button class="buy__btn" onclick="openOrderForm()">Buy Now</button>
-          </div>
-        </div>
-        <div class="popular__card">
-          <img src="IMG-20251129-WA0004.jpg" alt="popular" />
-          <div class="popular__card__content">
-            <h4>Key's summer </h4>
-            <h3>Rp 25.000</h3>
-            <button class="buy__btn" onclick="openOrderForm()">Buy Now</button>
-          </div>
-        </div>
-        <div class="popular__card">
-          <img src="IMG-20251129-WA0007.jpg" alt="popular" />
-          <div class="popular__card__content">
-            <h4>Key's Cream Scoop</h4>
-            <h3>Rp 30.000</h3>
-            <button class="buy__btn" onclick="openOrderForm()">Buy Now</button>
-          </div>
-        </div>
+    <div class="discover__card">
+      <img src="IMG-20251129-WA0003.jpg" alt="discover" />
+      <div class="discover__card__content">
+        <h4>Fruit Stick Key's Cream</h4>
+        <h3>Rp10.000 <span><s>Rp20.000</s></span></h3>
+        <button class="btn openOrder">Buy Now</button>
       </div>
-    </section>
+    </div>
 
-    <section class="category__container section__container" id="categories">
+    <div class="discover__card">
+      <img src="IMG-20251129-WA0001.jpg" alt="discover" />
+      <div class="discover__card__content">
+        <h4>Key's Cream Package 6 Mix</h4>
+        <h3>Rp80.000 <span><s>Rp105.000</s></span></h3>
+        <button class="btn openOrder">Buy Now</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DISCOUNT ================= -->
+<section class="section__container popular__container" id="discount">
+  <h2 class="section__header">Key's Cream Discount</h2>
+
+  <div class="popular__grid">
+    <div class="popular__card">
+      <img src="IMG-20251128-WA0024.jpg" alt="popular" />
+      <div class="popular__card__content">
+        <h4>Key's Cream Strawberry</h4>
+        <h3>Rp35.000</h3>
+        <button class="btn openOrder">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="popular__card">
+      <img src="IMG-20251129-WA0004.jpg" alt="popular" />
+      <div class="popular__card__content">
+        <h4>Key's Summer</h4>
+        <h3>Rp25.000</h3>
+        <button class="btn openOrder">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="popular__card">
+      <img src="IMG-20251129-WA0005.jpg" alt="popular" />
+      <div class="popular__card__content">
+        <h4>Key's Cream Scoop</h4>
+        <h3>Rp30.000</h3>
+        <button class="btn openOrder">Buy Now</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CATEGORY SECTIONS ================= -->
+<section class="section__container category__container" id="categories">
   <h2 class="section__header">Ice Cream Categories</h2>
-  <p class="section__description">
-    Check out the diverse range of ice cream categories available in our store!. From grab-and-go sticks to satisfying family tubs, explore our packaged ice cream categories below
-  </p>
 
   <div class="category__grid">
 
-    <!-- CARD 1 -->
-    <div class="category__card">
-      <img src="‎IMG-20250924-WA0018.jpg‎" alt="Cup Ice Cream" />
-      <div class="category__content">
-        <h3>Cup Series</h3>
-        <p>The Ice Cream Cup category consists of individually portioned frozen desserts packaged in small, disposable containers, typically made from plastic or heavy paperboard. These are designed for quick, single-serving consumption and are often sold complete with a miniature spoon, making them highly convenient for a ready-to-eat treat..</p>
-        <span class="category__tag">Cup</span>
-      </div>
+    <div class="category__card" id="stick">
+      <img src="‎IMG-20250924-WA0019.jpg‎" alt="stick" />
+      <h4>Ice Cream Stick</h4>
+      <p>Classic stick ice cream in many flavors.</p>
+      <button class="btn openOrder">Buy Now</button>
     </div>
 
-    <!-- CARD 2 -->
-    <div class="category__card">
-      <img src="‎IMG-20250924-WA0019.jpg‎" alt="Stick Ice Cream" />
-      <div class="category__content">
-        <h3>Stick Series</h3>
-        <p>The Ice Cream Stick (also known as an Ice Cream Bar) features a molded piece of ice cream served on a handle, usually a wooden or plastic stick. This format is a popular "grab-and-go" dessert, perfect for eating outdoors or on the move. Sticks are commonly enrobed in a layer of chocolate, nuts, or a flavored shell, offering a contrasting texture to the smooth ice cream inside.</p>
-        <span class="category__tag">Stick</span>
-      </div>
+    <div class="category__card" id="cup">
+      <img src="‎IMG-20250924-WA0018.jpg‎" alt="cup" />
+      <h4>Ice Cream Cup</h4>
+      <p>Creamy cup ice cream for 1–2 servings.</p>
+      <button class="btn openOrder">Buy Now</button>
     </div>
 
-    <!-- CARD 3 -->
-    <div class="category__card">
-      <img src="‎IMG-20250924-WA0017.jpg‎" alt="Cone Ice Cream" />
-      <div class="category__content">
-        <h3>Cone Series</h3>
-        <p>The Ice Cream Cone category refers to ice cream pre-packaged inside an edible, crunchy wafer or sugar cone. This combines the creamy smoothness of the ice cream with the enjoyable, crisp texture of the cone itself. Pre-packaged cones often feature decorative toppings and sometimes include a solid chocolate plug at the very bottom of the cone.</p>
-        <span class="category__tag">Cone</span>
-      </div>
+    <div class="category__card" id="cone">
+      <img src="‎IMG-20250924-WA0017.jpg‎" alt="cone" />
+      <h4>Ice Cream Cone</h4>
+      <p>Crispy cone with soft ice cream.</p>
+      <button class="btn openOrder">Buy Now</button>
     </div>
 
-    <!-- CARD 4 -->
-    <div class="category__card">
-      <img src="‎IMG-20250924-WA0020.jpg‎" alt="Tub Ice Cream" />
-      <div class="category__content">
-        <h3>The 5 liter tub key's cream</h3>
-        <p>The 5 Liter Tub is the largest commercial size for ice cream packaging. This bulk format is the most cost-effective option for high-volume users, including catering services, cafes, restaurants, or very large households. It is designed purely for scooping and offers a significant quantity of ice cream in one container.</p>
-        <span class="category__tag">Tub</span>
-      </div>
+    <div class="category__card" id="tub5L">
+      <img src="‎IMG-20250924-WA0020.jpg‎" alt="tub5L" />
+      <h4>Ice Cream 5 Liter</h4>
+      <p>Perfect for family or events.</p>
+      <button class="btn openOrder">Buy Now</button>
     </div>
 
-    <!-- CARD 5 -->
-    <div class="category__card">
-      <img src="IMG-20250924-WA0006.jpg‎" alt="Tub Ice Cream" />
-      <div class="category__content">
-        <h3>Tub Family Pack</h3>
-        <p>​This category, referred to broadly as Package or Tub, covers large volume containers of ice cream (such as 1-liter or 2-liter packs) intended for multiple servings. These are typically purchased for home consumption, allowing customers to scoop their preferred amount into bowls, making them ideal for family desserts, gatherings, or customizing sundaes./p>
-        <span class="category__tag">Tub</span>
-      </div>
+    <div class="category__card" id="package">
+      <img src="‎IMG-20251129-WA0006.jpg‎" alt="package" />
+      <h4>Ice Cream Package</h4>
+      <p>Mixed flavor package.</p>
+      <button class="btn openOrder">Buy Now</button>
     </div>
 
   </div>
 </section>
 
+<!-- ================= ORDER FORM ================= -->
+<section class="order__section" id="order">
+  <div class="order__container">
+    <h2 class="section__header">Order Ice Cream</h2>
+    <button class="order__btn" id="openOrder">Order Now</button>
+  </div>
 
-    <section class="banner">
-      <div class="banner__image"></div>
-      <div class="banner__content">
-        <h2 class="section__header">
-          Get Yummy Ice-Cream at a Reasonable Price
-        </h2>
-        <p class="section__description">
-          Treat yourself to delightful ice creams without breaking the bank!
-          Enjoy premium quality and mouthwatering flavors at prices that make
-          every scoop worth it.
-        </p>
-        <div class="banner__flex">
-          <div class="banner__card">
-            <img src="banner-1.png" alt="banner" />
-            <h4>Fresh & Natural</h4>
-          </div>
-          <div class="banner__card">
-            <img src="banner-2.png" alt="banner" />
-            <h4>Quick Packaging</h4>
-          </div>
-          <div class="banner__card">
-            <img src="banner-3.png" alt="banner" />
-            <h4>Fast Delivery</h4>
-          </div>
-        </div>
-      </div>
-    </section>
-<!-- ORDER FORM SECTION -->
-<section id="order" class="order-section">
-  <div class="order-container">
-    <h2>Order Ice Cream</h2>
-    <p>Isi form berikut untuk melakukan pemesanan.</p>
+  <div class="order__modal" id="orderModal">
+    <div class="order__modal__content">
+      <span class="order__close" id="closeOrder">&times;</span>
 
-    <form class="order-form">
-      <div class="form-group">
-        <label for="name">Nama Lengkap</label>
-        <input type="text" id="name" placeholder="Masukkan nama anda" required />
-      </div>
+      <h3>Order Form</h3>
 
-      <div class="form-group">
-        <label for="phone">No. Telepon</label>
-        <input type="text" id="phone" placeholder="08xxxxxxxxxx" required />
-      </div>
+      <form class="order__form">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name..." required />
 
-      <div class="form-group">
-        <label for="product">Pilih Produk</label>
-        <select id="product" required>
-          <option value="">-- Pilih Produk --</option>
+        <label>Order Type</label>
+        <select required>
+          <option value="">Choose product</option>
+          <option>Ice Cream Stick</option>
           <option>Ice Cream Cup</option>
           <option>Ice Cream Cone</option>
-          <option>Ice Cream Stick</option>
           <option>Ice Cream 5 Liter</option>
-          <option>Ice Cream Package</option>
+          <option>Package</option>
         </select>
-      </div>
 
-      <div class="form-group">
-        <label for="flavor">Pilih Rasa</label>
-        <select id="flavor" required>
-          <option value="">-- Pilih Rasa --</option>
-          <optgroup label="Klasik & Populer">
-            <option>Chocolate</option>
-            <option>Vanilla</option>
-            <option>Strawberry</option>
-            <option>Coffee</option>
-            <option>Neapolitan</option>
-          </optgroup>
-
-          <optgroup label="Kacang & Karamel">
-            <option>Pistachio</option>
-            <option>Salted Caramel</option>
-            <option>Peanut Butter</option>
-            <option>Almond</option>
-          </optgroup>
-
-          <optgroup label="Buah & Segar">
-            <option>Lemon</option>
-            <option>Mango</option>
-            <option>Raspberry</option>
-            <option>Coconut</option>
-          </optgroup>
-
-          <optgroup label="Unik & Favorit">
-            <option>Matcha</option>
-            <option>Mint Chocolate Chip</option>
-            <option>Cookies and Cream</option>
-            <option>Taro</option>
-            <option>Red Velvet</option>
-          </optgroup>
+        <label>Flavor</label>
+        <select required>
+          <option value="">Choose flavor</option>
+          <option>Chocolate</option>
+          <option>Vanilla</option>
+          <option>Strawberry</option>
+          <option>Matcha</option>
+          <option>Pistachio</option>
+          <option>Salted Caramel</option>
+          <option>Mint Chocolate Chip</option>
+          <option>Cookies and Cream</option>
+          <option>Mango</option>
+          <option>Coffee</option>
         </select>
-      </div>
 
-      <div class="form-group">
-        <label for="qty">Jumlah Pesanan</label>
-        <input type="number" id="qty" min="1" placeholder="Masukkan jumlah" required />
-      </div>
+        <label>Quantity</label>
+        <input type="number" min="1" placeholder="How many?" required />
 
-      <div class="form-group">
-        <label for="notes">Catatan Tambahan</label>
-        <textarea id="notes" placeholder="Contoh: ekstra topping, ukuran large, dll"></textarea>
-      </div>
+        <label>Phone Number</label>
+        <input type="text" placeholder="Your phone..." required />
 
-      <button type="submit" class="order-btn">Kirim Pesanan</button>
-    </form>
+        <label>Address</label>
+        <textarea placeholder="Delivery address..." required></textarea>
+
+        <button type="submit" class="submit__btn">Submit Order</button>
+      </form>
+    </div>
   </div>
 </section>
 
+<!-- ================= FOOTER ================= -->
+<footer id="contact">
+  <div class="section__container footer__container">
+    <div class="footer__col">
+      <a href="#" class="logo">Key's<span>Cream</span></a>
+    </div>
 
-</section>
-    <footer>
-      <div class="section__container footer__container">
-        <div class="footer__col">
-          <a href="#" class="logo">Ice<span>World</span></a>
-        </div>
-        <div class="footer__col">
-          <ul class="footer__links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#categories">Categories</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <ul class="socials">
-            <li>
-              <a href="#"><i class="ri-facebook-fill"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-twitter-fill"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-pinterest-line"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-phone-fill"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__bar">
-        Copyright © 2025 Web Design Mastery. All rights reserved.
-      </div>
-    </footer>
+    <div class="footer__col">
+      <ul class="footer__links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#popular">Popular</a></li>
+        <li><a href="#most-selling">Most Selling</a></li>
+        <li><a href="#categories">Categories</a></li>
+      </ul>
+    </div>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="main.js"></script>
-  </body>
+    <div class="footer__col">
+      <ul class="socials">
+        <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+        <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+        <li><a href="#"><i class="ri-pinterest-line"></i></a></li>
+        <li><a href="#"><i class="ri-phone-fill"></i></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer__bar">
+    © 2025 Key's Cream. All rights reserved.
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
