@@ -113,6 +113,7 @@
           <div class="popular__card__content">
             <h4>Key's cream ChocoMint </h4>
             <h3>Rp35.000</h3>
+              <button class="buy__btn" onclick="openOrderForm()">Buy Now</button>
           </div>
         </div>
         <div class="popular__card">
@@ -120,6 +121,7 @@
           <div class="popular__card__content">
             <h4>Key's Cream Chocolate </h4>
             <h3>Rp 25.000</h3>
+              <button class="buy__btn" onclick="openOrderForm()">Buy Now</button>
           </div>
         </div>
         <div class="popular__card">
@@ -127,6 +129,7 @@
           <div class="popular__card__content">
             <h4>Key's Cream Strawberry</h4>
             <h3>Rp 30.000</h3>
+              <button class="buy__btn" onclick="openOrderForm()">Buy Now</button>
           </div>
         </div>
       </div>
@@ -198,6 +201,7 @@
           <div class="popular__card__content">
             <h4>Key's cream strawberry </h4>
             <h3>Rp35.000</h3>
+            <button class="buy__btn" onclick="openOrderForm()">Buy Now</button>
           </div>
         </div>
         <div class="popular__card">
@@ -205,6 +209,7 @@
           <div class="popular__card__content">
             <h4>Key's summer </h4>
             <h3>Rp 25.000</h3>
+            <button class="buy__btn" onclick="openOrderForm()">Buy Now</button>
           </div>
         </div>
         <div class="popular__card">
@@ -212,6 +217,7 @@
           <div class="popular__card__content">
             <h4>Key's Cream Scoop</h4>
             <h3>Rp 30.000</h3>
+            <button class="buy__btn" onclick="openOrderForm()">Buy Now</button>
           </div>
         </div>
       </div>
@@ -297,50 +303,57 @@
       </div>
     </section>
 <section class="order__section" id="order">
-  <div class="order__container">
-    <h2 class="section__header">Order Ice Cream</h2>
-    <p class="section__description">
-      Fill in the order details below. We will prepare your sweet treats!
-    </p>
-    
-    <!-- Tombol -->
-    <button class="order__btn" id="openOrder">Order Now</button>
-  </div>
+<section class="category__container section__container" id="categories">
+  <h2 class="section__header">Ice Cream Categories</h2>
+  <p class="section__description">
+    Pilih jenis es krim favoritmu! Dari cup, stick, hingga cone.
+  </p>
 
-  <!-- POPUP / MODAL FORM -->
-  <div class="order__modal" id="orderModal">
-    <div class="order__modal__content">
-      <span class="order__close" id="closeOrder">&times;</span>
+  <div class="category__grid">
 
-      <h3>Order Form</h3>
-
-      <form class="order__form">
-        <label>Full Name</label>
-        <input type="text" placeholder="Your name..." required />
-
-        <label>Order Type</label>
-        <select required>
-          <option value="">Choose product</option>
-          <option>Ice Cream Stick</option>
-          <option>Ice Cream Cup</option>
-          <option>Ice Cream Cone</option>
-          <option>Ice Cream 5 Liter</option>
-          <option>Package</option>
-        </select>
-
-        <label>Quantity</label>
-        <input type="number" min="1" placeholder="How many?" required />
-
-        <label>Phone Number</label>
-        <input type="text" placeholder="Your phone..." required />
-
-        <label>Address</label>
-        <textarea placeholder="Delivery address..." required></textarea>
-
-        <button type="submit" class="submit__btn">Submit Order</button>
-      </form>
+    <!-- CARD 1 -->
+    <div class="category__card">
+      <img src="assets/cup.jpg" alt="Cup Ice Cream" />
+      <div class="category__content">
+        <h3>Cup Series</h3>
+        <p>Es krim lembut dengan topping melimpah, cocok untuk santai.</p>
+        <span class="category__tag">Cup</span>
+      </div>
     </div>
+
+    <!-- CARD 2 -->
+    <div class="category__card">
+      <img src="assets/stick.jpg" alt="Stick Ice Cream" />
+      <div class="category__content">
+        <h3>Stick Series</h3>
+        <p>Praktis dan nikmat, pas buat yang suka makan sambil jalan.</p>
+        <span class="category__tag">Stick</span>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="category__card">
+      <img src="assets/cone.jpg" alt="Cone Ice Cream" />
+      <div class="category__content">
+        <h3>Cone Series</h3>
+        <p>Kombinasi renyah cone dan es krim creamy, favorit sepanjang masa.</p>
+        <span class="category__tag">Cone</span>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="category__card">
+      <img src="assets/tub.jpg" alt="Tub Ice Cream" />
+      <div class="category__content">
+        <h3>Tub Family Pack</h3>
+        <p>Cocok untuk keluarga, berbagai varian rasa dalam ukuran besar.</p>
+        <span class="category__tag">Tub</span>
+      </div>
+    </div>
+
   </div>
+</section>
+
 
 </section>
     <footer>
@@ -382,6 +395,7 @@
     <script src="main.js"></script>
   </body>
 </html>
+
 
 
 
