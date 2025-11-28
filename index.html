@@ -193,65 +193,44 @@
         </div>
       </div>
     </section>
+<section class="order-section">
+  <button class="open-order-btn">ORDER NOW</button>
 
-  <section class="section__container order__container" id="order">
-  <h2 class="section__header">Order Now</h2>
-  <p class="section__description">
-    Pesan ice cream Key's Cream favorit kamu sekarang! Isi form di bawah
-    untuk melakukan pemesanan.
-  </p>
+  <div class="order-form-container" id="orderForm">
+    <h2>Order Ice Cream</h2>
 
-  <form class="order-form">
-    <div class="form-group">
-      <label>Nama Lengkap</label>
-      <input type="text" placeholder="Masukkan nama kamu" required />
-    </div>
-
-    <div class="form-group">
-      <label>Nomor WhatsApp / Telepon</label>
-      <input type="tel" placeholder="08xxxxxxxxxx" required />
-    </div>
-
-    <div class="form-group">
-      <label>Pilih Produk</label>
-      <select required>
-        <option value="">-- Pilih Produk --</option>
-        <option>Ice Cream Stick</option>
-        <option>Ice Cream Cup</option>
-        <option>Ice Cream Cone</option>
-        <option>Ice Cream 5 Liter</option>
-        <option>Ice Cream Package</option>
-      </select>
-    </div>
-
-    <div class="form-group">
-      <label>Jumlah</label>
-      <input type="number" min="1" placeholder="Masukkan jumlah" required />
-    </div>
-
-    <div class="form-group">
-      <label>Catatan Tambahan</label>
-      <textarea placeholder="Contoh: request rasa, packing, dll"></textarea>
-    </div>
-
-    <button class="btn order-btn" type="submit">Kirim Order</button>
-  </form>
-</section>
-    <section class="section__container subscribe__container" id="contact">
-      <div class="subscribe__content">
-        <h2 class="section__header">Subscribe For Discounts</h2>
-        <p class="section__description">
-          Don't miss out on sweet deals! Subscribe now to receive exclusive
-          discounts and updates on our latest ice cream flavors and special
-          offers.
-        </p>
-        <form action="/">
-          <input type="text" placeholder="Type Your Email" />
-          <button class="btn">Subscribe</button>
-        </form>
+    <form class="order-form">
+      <div class="form-group">
+        <label>Nama Pemesan</label>
+        <input type="text" placeholder="Masukkan nama kamu" required />
       </div>
-    </section>
 
+      <div class="form-group">
+        <label>Pilih Produk</label>
+        <select required>
+          <option value="">-- Pilih Produk --</option>
+          <option value="Stick">Ice Cream Stick</option>
+          <option value="Cup">Ice Cream Cup</option>
+          <option value="Cone">Ice Cream Cone</option>
+          <option value="5 Liter">Ice Cream 5 Liter</option>
+          <option value="Package">Ice Cream Package</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Jumlah</label>
+        <input type="number" min="1" placeholder="Masukkan jumlah" required />
+      </div>
+
+      <div class="form-group">
+        <label>Catatan</label>
+        <textarea placeholder="Tambahan (optional)"></textarea>
+      </div>
+
+      <button type="submit" class="order-btn">Kirim Pesanan</button>
+    </form>
+  </div>
+</section>
     <footer>
       <div class="section__container footer__container">
         <div class="footer__col">
@@ -291,6 +270,7 @@
     <script src="main.js"></script>
   </body>
 </html>
+
 
 
 
