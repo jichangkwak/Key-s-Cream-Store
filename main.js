@@ -97,3 +97,11 @@ ScrollReveal().reveal(".subscribe__content form", {
   ...scrollRevealOption,
   delay: 1000,
 });
+<script>
+  const btn = document.querySelector(".open-order-btn");
+  const form = document.getElementById("orderForm");
+
+  btn.addEventListener("click", () => {
+    form.style.display = form.style.display === "block" ? "none" : "block";
+  });
+</script>
