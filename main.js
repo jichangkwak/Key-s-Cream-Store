@@ -97,11 +97,20 @@ ScrollReveal().reveal(".subscribe__content form", {
   ...scrollRevealOption,
   delay: 1000,
 });
-<script>
-  const btn = document.querySelector(".open-order-btn");
-  const form = document.getElementById("orderForm");
+// ORDER POPUP
+const openOrder = document.getElementById("openOrder");
+const orderModal = document.getElementById("orderModal");
+const closeOrder = document.getElementById("closeOrder");
 
-  btn.addEventListener("click", () => {
-    form.style.display = form.style.display === "block" ? "none" : "block";
-  });
-</script>
+openOrder.addEventListener("click", () => {
+  orderModal.style.display = "flex";
+});
+
+closeOrder.addEventListener("click", () => {
+  orderModal.style.display = "none";
+});
+
+window.addEventListener("click", (e) => {
+  if (e.target === orderModal) orderModal.style.display = "none";
+});
+
