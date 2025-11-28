@@ -951,6 +951,71 @@ footer {
   background: #e56d3b;
 }
 </style>
+.category__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* baris pertama: 3 */
+  gap: 2rem;
+}
+
+/* kartu ke-4 & 5 pindah ke baris baru otomatis */
+.category__card:nth-child(4),
+.category__card:nth-child(5) {
+  justify-self: center;
+}
+.order-section {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.order-container {
+  max-width: 700px;
+  margin: auto;
+  background: #fafafa;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.order-container:hover {
+  transform: translateY(-3px);
+}
+
+.order-form .form-group {
+  margin-bottom: 20px;
+}
+
+.order-form input,
+.order-form select,
+.order-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  transition: 0.3s ease;
+}
+
+.order-form input:focus,
+.order-form select:focus,
+.order-form textarea:focus {
+  border-color: #ff7f50;
+  box-shadow: 0 0 5px rgba(255, 127, 80, 0.5);
+}
+
+.order-btn {
+  width: 100%;
+  padding: 14px;
+  background: #ff7f50;
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.order-btn:hover {
+  background: #ff966a;
+}
 
 
 
