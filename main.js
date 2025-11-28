@@ -114,3 +114,15 @@ window.addEventListener("click", (e) => {
   if (e.target === orderModal) orderModal.style.display = "none";
 });
 
+function openOrderForm() {
+  // Scroll ke form order
+  document.getElementById("order").scrollIntoView({
+    behavior: "smooth"
+  });
+}
+ScrollReveal().reveal(".order-container", {
+  distance: "50px",
+  origin: "bottom",
+  duration: 1000,
+  delay: 300
+});
